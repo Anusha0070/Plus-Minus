@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H1P-5p-vi5">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqB-Nj-r2P">
-                                <rect key="frame" x="71" y="477" width="101" height="35"/>
+                                <rect key="frame" x="71" y="521" width="101" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Increment">
                                     <color key="baseBackgroundColor" systemColor="systemPurpleColor"/>
@@ -27,7 +27,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rey-XZ-Lfe">
-                                <rect key="frame" x="207" y="477" width="109" height="35"/>
+                                <rect key="frame" x="207" y="521" width="109" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Decrement">
                                     <color key="baseBackgroundColor" systemColor="systemRedColor"/>
@@ -37,8 +37,23 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8x-v7-HzH">
-                                <rect key="frame" x="189" y="416" width="42" height="21"/>
+                                <rect key="frame" x="189" y="460" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHD-Ww-ZtJ">
+                                <rect key="frame" x="156" y="645" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <segue destination="rnQ-F3-9cF" kind="show" id="pdn-dU-XOy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the increment decrement screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4Y-35-5eb">
+                                <rect key="frame" x="35" y="151" width="322" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -46,21 +61,71 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="w8x-v7-HzH" firstAttribute="top" secondItem="e4Y-35-5eb" secondAttribute="bottom" constant="288" id="7eD-sE-L2f"/>
+                            <constraint firstItem="e4Y-35-5eb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="EqE-Zt-Aei"/>
                             <constraint firstItem="yqB-Nj-r2P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="71" id="JZC-V4-2Ti"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rey-XZ-Lfe" secondAttribute="trailing" constant="77" id="Jfs-Gj-Ofl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w8x-v7-HzH" secondAttribute="trailing" constant="162" id="UsW-Ak-pVE"/>
                             <constraint firstItem="w8x-v7-HzH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="189" id="cBC-aD-IpK"/>
                             <constraint firstItem="yqB-Nj-r2P" firstAttribute="top" secondItem="w8x-v7-HzH" secondAttribute="bottom" constant="40" id="d1N-gv-LCd"/>
                             <constraint firstItem="Rey-XZ-Lfe" firstAttribute="top" secondItem="w8x-v7-HzH" secondAttribute="bottom" constant="40" id="ftj-OI-r5t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e4Y-35-5eb" secondAttribute="trailing" constant="36" id="lVm-tY-vlX"/>
                             <constraint firstItem="Rey-XZ-Lfe" firstAttribute="leading" secondItem="yqB-Nj-r2P" secondAttribute="trailing" constant="35" id="oGx-gi-vrC"/>
-                            <constraint firstItem="w8x-v7-HzH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="357" id="u6O-Xx-ScG"/>
+                            <constraint firstItem="e4Y-35-5eb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="ypJ-Rw-pIE"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="tRk-ve-t4P"/>
                     <connections>
                         <outlet property="titleLab" destination="w8x-v7-HzH" id="7Bs-K6-mJW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="932.06106870229007" y="-2.1126760563380285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Kbt-8F-5WK">
+            <objects>
+                <viewController id="rnQ-F3-9cF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NLO-RK-sFU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the new screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pcj-j5-ISI">
+                                <rect key="frame" x="68" y="411" width="257" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="klM-D0-C1h"/>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <constraints>
+                            <constraint firstItem="Pcj-j5-ISI" firstAttribute="centerY" secondItem="NLO-RK-sFU" secondAttribute="centerY" id="B1G-st-QhD"/>
+                            <constraint firstItem="Pcj-j5-ISI" firstAttribute="centerX" secondItem="NLO-RK-sFU" secondAttribute="centerX" id="jdM-9K-4z1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="F6W-n5-56D"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SVX-yk-Gub" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1737" y="-2"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Gdz-ay-CwK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H1P-5p-vi5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Icj-J7-5qx">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ixu-Ej-B6m"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XMs-hq-ei5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5.343511450381679" y="-2.1126760563380285"/>
         </scene>
@@ -68,6 +133,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
