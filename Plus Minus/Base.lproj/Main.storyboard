@@ -20,7 +20,7 @@
                                 <rect key="frame" x="71" y="477" width="101" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Increment">
-                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                    <color key="baseBackgroundColor" systemColor="systemPurpleColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="incBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jzb-M7-yWx"/>
@@ -69,8 +69,8 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
